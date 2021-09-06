@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+ -webkit-font-smoothing: antialiased;
+ font-size: 16px ;
+ font-family: 'gerbera-lightuploaded_file' ;
+}
+
+ul{
+    list-style-type: none;
+}
+
+button {
+ cursor: pointer;
+}
+
+/*font-face*/
+@font-face {
+    font-family: 'gerbera-lightuploaded_file';
+    src: url(../fonts/gerbera-light-webfont.woff2) format('woff2');
+
+}
+
+#container{
+    width: 100%;
+    background-color: #EFEFEF;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation>.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navigation>.wrapper>.logo{
+    order: 0;
+}
+
+.navigation>.wrapper>.logo>img{
+    width: 200px;
+}
+
+.navigation>.wrapper>nav{
+    order: 1;
+    
+}
+
+.navigation>.wrapper>nav>ul>li{
+    display: inline-flex;
+}
+
+.navigation>.wrapper>nav>ul>li>a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.hero-banner{
+    width: 100%;
+    background-color: yellow;
+    height: 250px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+main>.wrapper{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+main>.wrapper>.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.banner{
+    background-color: lightgray;
+    height: 143px;
+    margin: 10px;
+    flex-basis: calc(33.33% - 20px);
+}
+
+footer{
+    background-color: yellow;
+}
+
+footer>.wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+footer>.wrapper>p:first-child{
+    flex:1;
+    padding: 10px;
+}
+
+footer>.wrapper>p>span{
+    font-weight: bold;
+}
+
+.click-box{
+    width: 250px;
+    background-color: slategray;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+}
